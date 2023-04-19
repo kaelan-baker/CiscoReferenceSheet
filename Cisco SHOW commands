@@ -1,0 +1,10 @@
+show command review - show ____ on a ROUTER
+-----------------------------------------------------
+show arp 		- Shows the arp table
+show flash 		- Shows the system fllash directory (Flash storage used on the device)
+show ip route		- Shows the IP routing table (What ip/subnet is connected and to where.)
+show interfaces 	- Shows detailed information about the interfaces - whether up/down and other info
+show ip interface brief	- Shows info about each interface and what IP is set, also whether up/down
+show protocols		- Shows protocols in use on the router
+show users		- Shows what users are managing the system, also what line device they are on.
+show version		- Shows device version and info.

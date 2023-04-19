@@ -1,0 +1,80 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+																											|
+                     .-')                                    ('-.  ) (`-.       ('-.     _   .-')                      ('-. .-.   ('-.   ('-.     .-') _           .-')    ('-. .-.   ('-.     ('-.   .-') _    	|
+                    ( OO ).                                _(  OO)  ( OO ).    ( OO ).-.( '.( OO )_                   ( OO )  / _(  OO) ( OO ).-.(  OO) )         ( OO ). ( OO )  / _(  OO)  _(  OO) (  OO) )   	|
+   .-----.  ,-.-') (_)---\_)   .-----.  .-'),-----.       (,------.(_/.  \_)-. / . --. / ,--.   ,--.)         .-----. ,--. ,--.(,------./ . --. //     '._       (_)---\_),--. ,--.(,------.(,------./     '._  	|
+  '  .--./  |  |OO)/    _ |   '  .--./ ( OO'  .-.  '       |  .---' \  `.'  /  | \-.  \  |   `.'   |         '  .--./ |  | |  | |  .---'| \-.  \ |'--...__)      /    _ | |  | |  | |  .---' |  .---'|'--...__) 	|
+  |  |('-.  |  |  \\  :` `.   |  |('-. /   |  | |  |       |  |      \     /\.-'-'  |  | |         |         |  |('-. |   .|  | |  |  .-'-'  |  |'--.  .--'      \  :` `. |   .|  | |  |     |  |    '--.  .--' 	|
+ /_) |OO  ) |  |(_/ '..`''.) /_) |OO  )\_) |  |\|  |      (|  '--.    \   \ | \| |_.'  | |  |'.'|  |        /_) |OO  )|       |(|  '--.\| |_.'  |   |  |          '..`''.)|       |(|  '--. (|  '--.    |  |    	|
+ ||  |`-'| ,|  |_.'.-._)   \ ||  |`-'|   \ |  | |  |       |  .--'   .'    \_) |  .-.  | |  |   |  |        ||  |`-'| |  .-.  | |  .--' |  .-.  |   |  |         .-._)   \|  .-.  | |  .--'  |  .--'    |  |    	|
+(_'  '--'\(_|  |   \       /(_'  '--'\    `'  '-'  '       |  `---. /  .'.  \  |  | |  | |  |   |  |       (_'  '--'\ |  | |  | |  `---.|  | |  |   |  |         \       /|  | |  | |  `---. |  `---.   |  |    	|
+   `-----'  `--'    `-----'    `-----'      `-----'        `------''--'   '--' `--' `--' `--'   `--'          `-----' `--' `--' `------'`--' `--'   `--'          `-----' `--' `--' `------' `------'   `--'    	|
+   																											|
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+| Quick Lookup		| Command			| Location	 	| Description						|
+|-----------------------|-------------------------------|-----------------------|-------------------------------------------------------|
+|			|				|			|							|
+| GENERAL		| no ip domain-lookup		| Global Config		| Stops lookup when commands entered wrong		|
+| 			| show				| EXEC Mode		| Shows commands and info about interfaces		|
+| 			| [TAB KEY]			| Anywhere		| Autocompletes commands - Dbltap for extra commands	|
+| 			| [?]				| Anywhere		| Shows what commands are available 			|
+|			|				|			|							|
+|-----------------------|-------------------------------|-----------------------|-------------------------------------------------------|
+|			|				|			|							|
+| LOGIN			| enable			| EXEC Mode		| Enters Priveleged EXEC Mode				|
+|			| configure terminal		| Priv Exec 		| Enters Global Configuration				|
+|			| line console 0 3		| Global Config 	| Enters Line Console 0-3				|
+|			| line vty 0 15			| Global Config		| Enters Virtual Terminal Lines	(Any Line Device)	|
+|			| interface FastEthernet 0/1	| Global Config		| Enters FastEthernet configuration for the spec device	|
+|			|				|			|							|
+|-----------------------|-------------------------------|-----------------------|-------------------------------------------------------|
+|			|				|			|							|
+| SHOW			| show arp			| EXEC Mode		| Shows ARP Cached table				|
+| 			| show flash			| EXEC Mode		| Shows System Flash Memory				|
+| 			| show ip route			| EXEC Mode		| Shows the IP routing table (What IP/Subnet goes where)|
+| 			| show interfaces		| EXEC Mode		| Shows detailed info on interfaces			|
+| 			| show ip interface brief	| EXEC Mode		| Shows info on ip'd interfaces - easier to read than ^	|
+| 			| show mac address-table	| EXEC Mode		| Shows MAC address table				|
+| 			| show protocols		| EXEC Mode		| Shows system protocols + whether up/down		|
+| 			| show users			| EXEC Mode		| Shows what users are on the system + what line dev	|
+| 			| show version			| EXEC Mode		| Shows device version and info				|
+| 			| show vlan			| EXEC Mode		| Shows vlans configured on device			|
+|			|				|			|							|
+|-----------------------|-------------------------------|-----------------------|-------------------------------------------------------|
+|			|				|			|							|
+| PASSWORDS		| enable password {pass}	| Global Config		| Non-secure pw for exec mode				|
+|			| enable secret {pass}		| Global Config		| 'Secure' pw for Priv Exec Mode  (Easy to decrypt)	|
+|			| password {pass}		| Line Configuration	| sets password on any line device			|
+|			| service password-encryption	| Global Config		| sets all passwords to encrypted - *Needed after ^*	|
+|			|				|			|							|
+|-----------------------|-------------------------------|-----------------------|-------------------------------------------------------|
+|			|				|			|							|
+| CONFIG		| hostname {name}		| Global Config		| Changes hostname to given name			|
+|			| banner motd "{message}"	| Global Config		| Configures MOTD - Needs defining chars '/"/*/{}	|
+|			| show running-config		| EXEC Mode		| Displays the current running configuration		|
+|			| show startup-config		| EXEC Mode		| Displays the current startup configuration		|
+|			| copy run start		| EXEC Mode		| Copies the Running Config to the Startup Config	|
+|			|				|			|							|
+|-----------------------|-------------------------------|-----------------------|-------------------------------------------------------|
+|			|				|			|							|
+| IP			| ip address {address} {SubN}	| Interface Config	| Sets IP for the current Interface			|
+|			| ip default-gateway {address}	| Global Config		| Sets the Gateway IP for the system			|
+|			| ip domain-name {name}		| Global Config		| Sets default Domain Name				|
+|			| ping {address}		| EXEC Mode		| Pings the given address				|
+|			|				|			|							|
+|-----------------------|-------------------------------|-----------------------|-------------------------------------------------------|
+|			|				|			|							|
+| SSH			| 				| 			| 							|
+
+
+
+
+
+
+
+
+
+
+
+
+
