@@ -62,9 +62,15 @@
 |			| ip domain-name {name}		| Global Config		| Sets default Domain Name				|
 |			| ping {address}		| EXEC Mode		| Pings the given address				|
 |			|				|			|							|
+| IPV6*			| 				|			|							|
+|			|				|			|							|
 |-----------------------|-------------------------------|-----------------------|-------------------------------------------------------|
 |			|				|			|							|
-| SSH			| 				| 			| 							|
+| SSH			| crypto key generate rsa	| Global Config		| Generate an RSA key pair				|
+| 			| username {usr} password {pwd}	| Global Config		| Sets Username and Password				|
+| 			| login local			| Line Config		| Sets Login to use local Database			|
+| 			| login local			| Line Config		| Sets Login to use local Database			|
+
 
 
 
