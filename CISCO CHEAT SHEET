@@ -62,7 +62,8 @@
 |			| ip domain-name {name}		| Global Config		| Sets default Domain Name				|
 |			| ping {address}		| EXEC Mode		| Pings the given address				|
 |			|				|			|							|
-| IPV6*			| 				|			|							|
+| IPV6*			| ipv6 unicast-routing		| Global Config		| Enables ipv6 routing					|
+| 			| ipv6 address {ip}/{SubN}	| Global Config		| Enables ipv6 routing					|
 |			|				|			|							|
 |-----------------------|-------------------------------|-----------------------|-------------------------------------------------------|
 |			|				|			|							|
